@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "944524172058",
+    "project_id": "paykr-v1",
+    "storage_bucket": "paykr-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944524172058:android:30d445f265662326692aa3",
+        "android_client_info": {
+          "package_name": "com.HexaCreators"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASiwEaAde47gKWbS6WeNlga0EvkUWX0e8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944524172058:android:85232d2dd820b7b7692aa3",
+        "android_client_info": {
+          "package_name": "com.HexaCreators.paykr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASiwEaAde47gKWbS6WeNlga0EvkUWX0e8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
