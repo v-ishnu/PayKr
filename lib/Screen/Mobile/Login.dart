@@ -71,7 +71,7 @@ class _LoginPageState extends State<LoginPage> {
                 const SizedBox(height: 5),
                 //Subtitle
                 Text(
-                  'Hey you’re back, fill in your details to get back in',
+                  "Hey you're back, fill in your details to get back in",
                   style: TextStyle(
                     color: S_Color,
                   ),

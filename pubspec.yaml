@@ -55,6 +55,8 @@ dependencies:
   connectivity_plus: ^6.0.3
   email_auth: ^2.0.0
   google_sign_in: ^6.2.1
+  mongo_dart: ^0.10.3
+  http: ^1.2.2
 
 dev_dependencies:
   flutter_test:
