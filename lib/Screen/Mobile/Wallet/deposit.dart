@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 
 
 class DepositPage extends StatefulWidget {
-  final DashboardBloc dashboardBloc;
-  const DepositPage({super.key, required this.dashboardBloc});
+  // final DashboardBloc dashboardBloc;
+  // const DepositPage({super.key, required this.dashboardBloc});
 
   @override
   State<DepositPage> createState() => _DepositPageState();

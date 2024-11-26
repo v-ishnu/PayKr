@@ -214,104 +214,127 @@ class _WalletScreenState extends State<WalletScreen> {
               ),
 
               ///Transaction
-              InkWell(
-                onTap: () => {},
-                splashColor: Colors.transparent,
-                highlightColor: Colors.transparent,
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 20),
-                  child: Center(
-                    child: SizedBox(
-                      width: MediaQuery.of(context).size.width * 0.93,
-                      height: MediaQuery.of(context).size.height * 0.1,
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: const Color(0xff2816A7),
-                          borderRadius: BorderRadius.circular(25),
-                        ),
-                        child: Row(
+              Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: Center(
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width * 0.93,
+                    height: MediaQuery.of(context).size.height * 0.15,
+                    child: Row(
+                      mainAxisAlignment:
+                          MainAxisAlignment.spaceBetween, // Distribute evenly
+                      children: [
+                        // First Container
+                        Column(
                           children: [
-                            Padding(
-                              padding: const EdgeInsets.only(left: 20),
-                              child: Stack(
-                                children: <Widget>[
-                                  Container(
-                                    width: 60,
-                                    height: 60,
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xff5844EE),
-                                      borderRadius: BorderRadius.circular(16),
-                                    ),
-                                    child: const Icon(
-                                      HugeIcons.strokeRoundedDiscount,
-                                      color: Colors.white,
-                                      size: 40,
-                                    ),
-                                  ),
-                                  Positioned(
-                                    right: 0,
-                                    top: -7,
-                                    child: Container(
-                                      padding: const EdgeInsets.all(6),
-                                      decoration: const BoxDecoration(
-                                        color: Colors.orange,
-                                        shape: BoxShape.circle,
-                                      ),
-                                      child: const Text(
-                                        '!',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            const SizedBox(width: 15),
-                            SizedBox(
-                              width: MediaQuery.of(context).size.width * 0.5,
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    'Sort your transactions',
-                                    style: GoogleFonts.inter(
-                                        fontSize: 16,
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.w500),
-                                  ),
-                                  Text(
-                                    'Get points for sorting your transactions',
-                                    style: GoogleFonts.inter(
-                                        color: Colors.white, fontSize: 12),
-                                    softWrap: true,
-                                  )
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 22),
-                              child: SizedBox(
-                                width: 35,
-                                height: 35,
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(25),
-                                    color: const Color(0xff2310B2),
-                                  ),
-                                  child: const Icon(
-                                    HugeIcons.strokeRoundedArrowRight01,
-                                    color: Color(0xff978AF4),
-                                  ),
+                            Container(
+                                width: MediaQuery.of(context).size.width *
+                                    0.22, // Set width
+                                height:
+                                    MediaQuery.of(context).size.height * 0.08,
+                                decoration: BoxDecoration(
+                                  color: const Color(0xff2816A7),
+                                  borderRadius: BorderRadius.circular(25),
                                 ),
-                              ),
-                            )
+                                child: HugeIcon(
+                                  icon: HugeIcons.strokeRoundedUpload03,
+                                  color: Colors.white,
+                                  size: 37,
+                                )),
+                            const SizedBox(
+                                height: 8), // Space between container and text
+                            Text(
+                              'Send',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                            ),
                           ],
                         ),
-                      ),
+
+                        // Second Container
+                        Column(
+                          children: [
+                            Container(
+                                width: MediaQuery.of(context).size.width *
+                                    0.22, // Set width
+                                height:
+                                    MediaQuery.of(context).size.height * 0.08,
+                                decoration: BoxDecoration(
+                                  color:
+                                      const Color(0xff2816A7), // Example color
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
+                                child: HugeIcon(
+                                  icon: HugeIcons.strokeRoundedDownload03,
+                                  color: Colors.white,
+                                  size: 37,
+                                )),
+                            const SizedBox(height: 8),
+                            Text(
+                              'Receive',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+
+                        // Third Container
+                        Column(
+                          children: [
+                            Container(
+                              width: MediaQuery.of(context).size.width *
+                                  0.22, // Set width
+                              height: MediaQuery.of(context).size.height * 0.08,
+                              decoration: BoxDecoration(
+                                color: const Color(0xff2816A7), // Example color
+                                borderRadius: BorderRadius.circular(16),
+                              ),
+                              child: HugeIcon(
+                                icon: HugeIcons.strokeRoundedCreditCard,
+                                color: Colors.white,
+                                size: 37,
+                              ),
+                            ),
+                            const SizedBox(height: 8),
+                            Text(
+                              'History',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+
+                        // Fourth Container
+                        Column(
+                          children: [
+                            Container(
+                                width: MediaQuery.of(context).size.width *
+                                    0.22, // Set width
+                                height:
+                                    MediaQuery.of(context).size.height * 0.08,
+                                decoration: BoxDecoration(
+                                  color:
+                                      const Color(0xff2816A7), // Example color
+                                  borderRadius: BorderRadius.circular(16),
+                                ),
+                                child: HugeIcon(
+                                  icon: HugeIcons.strokeRoundedExchange03,
+                                  color: Colors.white,
+                                  size: 37,
+                                )),
+                            const SizedBox(height: 8),
+                            Text(
+                              'Settings',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                   ),
                 ),
