@@ -128,7 +128,7 @@ class _HomeState extends State<Home> {
                     child: InkWell(
                       onTap: () => Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => WalletScreen()),
+                        MaterialPageRoute(builder: (context) => const WalletScreen()),
                       ),
                       child: Container(
                         decoration: BoxDecoration(

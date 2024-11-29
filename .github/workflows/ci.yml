@@ -1,4 +1,6 @@
 name: CI
+
+# Name should be anything
 on:
   pull_request:
     branches:

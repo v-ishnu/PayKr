@@ -188,10 +188,10 @@ class _WalletScreenState extends State<WalletScreen> {
                                         height: 30,
                                         child: DecoratedBox(
                                           decoration: BoxDecoration(
-                                              color: Color(0x907BFFB2),
+                                              color: const Color(0x907BFFB2),
                                               borderRadius:
                                                   BorderRadius.circular(6)),
-                                          child: Row(
+                                          child: const Row(
                                             children: [
                                               Icon(IconlyLight.arrow_up_circle),
                                               Text("8%")
@@ -236,14 +236,14 @@ class _WalletScreenState extends State<WalletScreen> {
                                   color: const Color(0xff2816A7),
                                   borderRadius: BorderRadius.circular(25),
                                 ),
-                                child: HugeIcon(
+                                child: const HugeIcon(
                                   icon: HugeIcons.strokeRoundedUpload03,
                                   color: Colors.white,
                                   size: 37,
                                 )),
                             const SizedBox(
                                 height: 8), // Space between container and text
-                            Text(
+                            const Text(
                               'Send',
                               style: TextStyle(
                                   color: Colors.white,
@@ -265,13 +265,13 @@ class _WalletScreenState extends State<WalletScreen> {
                                       const Color(0xff2816A7), // Example color
                                   borderRadius: BorderRadius.circular(16),
                                 ),
-                                child: HugeIcon(
+                                child: const HugeIcon(
                                   icon: HugeIcons.strokeRoundedDownload03,
                                   color: Colors.white,
                                   size: 37,
                                 )),
                             const SizedBox(height: 8),
-                            Text(
+                            const Text(
                               'Receive',
                               style: TextStyle(
                                   color: Colors.white,
@@ -291,14 +291,14 @@ class _WalletScreenState extends State<WalletScreen> {
                                 color: const Color(0xff2816A7), // Example color
                                 borderRadius: BorderRadius.circular(16),
                               ),
-                              child: HugeIcon(
+                              child: const HugeIcon(
                                 icon: HugeIcons.strokeRoundedCreditCard,
                                 color: Colors.white,
                                 size: 37,
                               ),
                             ),
                             const SizedBox(height: 8),
-                            Text(
+                            const Text(
                               'History',
                               style: TextStyle(
                                   color: Colors.white,
@@ -320,13 +320,13 @@ class _WalletScreenState extends State<WalletScreen> {
                                       const Color(0xff2816A7), // Example color
                                   borderRadius: BorderRadius.circular(16),
                                 ),
-                                child: HugeIcon(
+                                child: const HugeIcon(
                                   icon: HugeIcons.strokeRoundedExchange03,
                                   color: Colors.white,
                                   size: 37,
                                 )),
                             const SizedBox(height: 8),
-                            Text(
+                            const Text(
                               'Settings',
                               style: TextStyle(
                                   color: Colors.white,

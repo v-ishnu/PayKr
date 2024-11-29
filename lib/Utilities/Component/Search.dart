@@ -36,7 +36,7 @@ class _SearchState extends State<Search> {
             color: const Color(0xff97969E),
             fontSize: 15
           ),
-          prefixIcon: Icon(
+          prefixIcon: const Icon(
               HugeIcons.strokeRoundedSearch01,
               color: Color(0xff487ba4)
           ),
